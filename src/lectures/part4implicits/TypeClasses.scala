@@ -112,4 +112,6 @@ object TypeClasses extends App {
 
   // access to the entire type class interface
   println(HTMLSerializer[User].serialize(john))
+
+  def myImplicitly[T](implicit arg: T): T = arg
 }
